@@ -1,6 +1,6 @@
 <?php
 
-namespace rameshdada\Asirem;
+namespace rameshdada\customtheme;
 
 use Flarum\Extend;
 use Flarum\Frontend\Document;
@@ -26,11 +26,11 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less')
         ->content(function (Document $document) {
-            $document->layoutView = "ramesh-dada-asirem::frontend.admin";
+            $document->layoutView = "ramesh-dada-customtheme::frontend.admin";
         }),
 
     (new Extend\View)
-        ->namespace("ramesh-dada-asirem", __DIR__."/views"),
+        ->namespace("ramesh-dada-customtheme", __DIR__."/views"),
 
     new Extend\Locales(__DIR__.'/locale'),
 ];
