@@ -22,15 +22,12 @@
   },
   "authors": [
     {
-      "name": "Sami Mazouz",
-      "email": "ilyasmazouz@gmail.com",
+      "name": "Ramesh Dada",
       "role": "Developer"
     }
   ],
   "support": {
-    "issues": "https://github.com/afrux/asirem/issues",
-    "source": "https://github.com/afrux/asirem",
-    "forum": "https://discuss.flarum.org/d/27939"
+    "forum": "/"
   },
   "autoload": {
     "psr-4": {
@@ -39,7 +36,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Afrux\\Asirem\\Tests\\": "tests/"
+      "rameshdada\\Asirem\\Tests\\": "tests/"
     }
   },
   "extra": {
