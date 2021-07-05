@@ -26,11 +26,11 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less')
         ->content(function (Document $document) {
-            $document->layoutView = "afrux-asirem::frontend.admin";
+            $document->layoutView = "ramesh-dada-asirem::frontend.admin";
         }),
 
     (new Extend\View)
-        ->namespace("afrux-asirem", __DIR__."/views"),
+        ->namespace("ramesh-dada-asirem", __DIR__."/views"),
 
     new Extend\Locales(__DIR__.'/locale'),
 ];
