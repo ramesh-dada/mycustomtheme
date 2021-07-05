@@ -1,34 +1,10 @@
 import { extend, override } from 'flarum/common/extend';
-import DiscussionListItem from 'flarum/forum/components/DiscussionListItem';
 import TagsPage from 'flarum/tags/components/TagsPage';
 import AsiremTagsPage from './components/TagsPage';
 import { truncate } from 'flarum/utils/string';
-
 import Footer from 'flarum/extensions/afrux-theme-base/forum/components/Footer';
 
 app.initializers.add('afrux-asirem', () => {
-  extend(DiscussionListItem.prototype, 'view', function (vnode) {
-    const discussionListItemContent = vnode.children.find(
-      (e) => e.tag === 'div' && e.attrs && e.attrs.className.includes('DiscussionListItem-content')
-    );
-
-    discussionListItemContent.children[0] = (
-      <div className="DiscussionListItem-author-container">{[discussionListItemContent.children[0], discussionListItemContent.children[1]]}</div>
-    );
-
-    delete discussionListItemContent.children[1];
-
-    discussionListItemContent.children[3] = <div className="DiscussionListItem-stats">{discussionListItemContent.children[3]}</div>;
-
-    if (this.attrs.discussion.tags() && this.attrs.discussion.tags()[0] && this.attrs.discussion.tags()[0].color()) {
-      vnode.attrs.style = { '--tag-color': this.attrs.discussion.tags()[0].color(), ...(vnode.attrs.style || {}) };
-    }
-
-    if (this.attrs.discussion.isUnread()) {
-      vnode.attrs.className += ' DiscussionListItem--unread';
-    }
-  });
-
   override(Footer.prototype, 'separator', function () {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="288" className="Asirem-footerWaves">
