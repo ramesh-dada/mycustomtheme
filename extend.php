@@ -1,6 +1,6 @@
 <?php
 
-namespace Afrux\Asirem;
+namespace ramesh-dada\Asirem;
 
 use Flarum\Extend;
 use Flarum\Frontend\Document;
