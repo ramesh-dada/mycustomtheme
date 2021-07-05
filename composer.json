@@ -21,7 +21,7 @@
     }
   ],
   "support": {
-    "forum": "/"
+    "forum": "https://discuss.flarum.org/u/1Dot"
   },
   "autoload": {
     "psr-4": {
