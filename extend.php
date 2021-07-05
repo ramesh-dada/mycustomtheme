@@ -6,7 +6,7 @@ use Flarum\Extend;
 use Flarum\Frontend\Document;
 
 return [
-    new \Afrux\ThemeBase\Extend\Init('afrux-asirem'),
+    new \Afrux\ThemeBase\Extend\Init('ramesh-dada-customtheme'),
     new \Afrux\ThemeBase\Extend\Footer,
     new \Afrux\ThemeBase\Extend\UploadableBanner,
     new \Afrux\ThemeBase\Extend\ExposeLaravelVersionToDashboard,
