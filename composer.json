@@ -34,7 +34,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Afrux\\Asirem\\": "src/"
+      "rameshdada\\Asirem\\": "src/"
     }
   },
   "autoload-dev": {
