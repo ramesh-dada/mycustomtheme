@@ -29,18 +29,6 @@ app.initializers.add('afrux-asirem', () => {
     }
   });
 
-  extend(DiscussionListItem.prototype, 'infoItems', function (items) {
-    if (!items.has('excerpt')) {
-      const firstPost = this.attrs.discussion.firstPost();
-
-      if (firstPost) {
-        const excerpt = truncate(firstPost.contentPlain(), 175);
-
-        items.add('excerpt', <div>{excerpt}</div>, -100);
-      }
-    }
-  });
-
   override(Footer.prototype, 'separator', function () {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="288" className="Asirem-footerWaves">
