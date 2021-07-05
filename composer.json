@@ -1,17 +1,11 @@
 {
   "name": "ramesh-dada/customtheme",
-  "description": "Its Copy of Afrux Asirem theme",
+  "description": "1Dot Custom Theme Powered by Ramesh Dada Premium",
   "keywords": [
     "flarum"
   ],
   "type": "flarum-extension",
   "license": "MIT",
-  "funding": [
-    {
-      "type": "other",
-      "url": "https://www.buymeacoffee.com/sycho"
-    }
-  ],
   "require": {
     "flarum/core": "^1.0.0",
     "afrux/flarum-theme-base": "^0.1.0"
