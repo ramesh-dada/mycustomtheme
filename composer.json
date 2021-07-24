@@ -7,8 +7,7 @@
   "type": "flarum-extension",
   "license": "MIT",
   "require": {
-    "flarum/core": "^1.0",
-    "ramesh-dada/flarum-theme-base": "^1.0"
+    "flarum/core": "^1.0"
   },
   "authors": [
     {
