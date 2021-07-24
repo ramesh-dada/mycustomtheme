@@ -29,7 +29,7 @@
       "dev-master": "0.1.x-dev"
     },
     "flarum-extension": {
-      "title": "Custom Theme",
+      "title": "Asirem",
       "category": "theme",
       "optional-dependencies": [
           "flarum/tags",
