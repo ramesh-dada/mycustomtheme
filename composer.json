@@ -10,10 +10,6 @@
     "flarum/core": "^1.0",
     "ramesh-dada/flarum-theme-base": "^1.0"
   },
-  "require-dev": {
-    "sycho/flarum-uikit": "0.1.x-dev",
-    "afrux/flarum-theme-base": "0.1.x-dev"
-  },
   "authors": [
     {
       "name": "Ramesh Dada",
@@ -28,22 +24,17 @@
       "rameshdada\\customtheme\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "rameshdada\\Asirem\\Tests\\": "tests/"
-    }
-  },
+
   "extra": {
     "branch-alias": {
       "dev-master": "0.1.x-dev"
     },
     "flarum-extension": {
-      "title": "Asirem",
+      "title": "Custom Theme",
       "category": "theme",
       "optional-dependencies": [
           "flarum/tags",
-          "flarum/approval",
-          "sycho/flarum-advanced-extension-categories"
+          "flarum/approval"
         ],
       "icon": {
         "image": "icon.svg"
