@@ -32,6 +32,9 @@ export default class TagsPage {
                 const children = sortTags(tag.children() || []);
                 const tagIconNode = tagIcon(tag, {}, { useColor: false });
 
+                if (tagIconNode.attrs.style && tagIconNode.attrs.style.backgroundColor) {
+                  delete tagIconNode.attrs.style.backgroundColor;
+                }
 
                 return (
                   <li className={'Asirem-TagTile ' + (tag.color() ? 'colored' : '')} style={{ '--tag-bg': tag.color() }}>
